@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    function Temperature(c){
+        this.c = c;
+    this.getC = function (){
+      return c
+    }
+    this.getF= function (){
+        return (9/5 * c) +32
+        }
+     this.getKevin= function (){
+        return c + 273.15
+     }
+    }
+    let tempertature = new Temperature(32);
+    let c = tempertature.getC();
+    let f = tempertature.getF();
+    let kevin = tempertature.getKevin();
+    alert ("Do C la" + c + "thi do F la" + f + "do kevin la"+ kevin)
+</script>
+
+</body>
+</html>
